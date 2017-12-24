@@ -63,6 +63,9 @@ public class Game {
         for (int i = 0; i < max; i++) {
             for (int j = 0; j < max; j++) {
                 cells[i][j] = in.nextInt();
+                if (cells[i][j] != 0 && cells[i][j] != 1) {
+                    cells[i][j] = 0;
+                }
             }
         }
         game.print(cells);
